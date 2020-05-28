@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id='@+id/title'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A Cake Occasion"
+        android:textSize="36sp"
+        android:padding="20dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="cursive"
+        />
+
+    <ImageView
+        android:id='@+id/image'
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/title"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rainbowcake" />
+
+    <TextView
+        android:id='@+id/contact_phone'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: (303) 451-7717"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/image"/>
+
+    <TextView
+        android:id='@+id/title_address'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:layout_below="@id/contact_phone"/>
+
+    <TextView
+        android:id='@+id/address'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3901 E 112th Ave, Thornton, CO 80233"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/black"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@id/title_address"/>
+
+    <TextView
+        android:id='@+id/description'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Family-run bakery focuses on highly decorated custom cakes and other sweets in a strip-mall location."
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/black"
+        android:padding="20dp"
+        android:layout_below="@id/address"/>
+
+    <TextView
+        android:id='@+id/title_hours'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hours:"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:layout_below="@id/description"/>
+
+    <TextView
+        android:id='@+id/open_hours'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tuesday-Saturday 8AM-4PM"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/black"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@id/title_hours"/>
+
+    <TextView
+        android:id='@+id/closed_hours'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunday and Monday CLOSED"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/black"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@id/open_hours"/>
+
+</RelativeLayout>
